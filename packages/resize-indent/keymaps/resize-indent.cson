@@ -1,3 +1,0 @@
-'atom-text-editor':
-  'ctrl-}': 'resize-indent:double'
-  'ctrl-{': 'resize-indent:halve'
