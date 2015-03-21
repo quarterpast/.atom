@@ -1,0 +1,63 @@
+"*":
+  editor:
+    fontFamily: "Input"
+    fontSize: 10
+    lineHeight: 1.4
+    showInvisibles: true
+    showIndentGuide: true
+    softTabs: false
+    scrollPastEnd: true
+    invisibles: {}
+    softWrap: true
+  core:
+    themes: [
+      "beacon-ui"
+      "monokai-dave"
+    ]
+    followSymlinks: true
+    disabledPackages: [
+      "deprecation-cop"
+    ]
+  "markdown-preview": {}
+  "exception-reporting":
+    userId: "6b70f664-35d8-938b-83ae-501132282f7b"
+  welcome:
+    showOnStartup: false
+  "remember-session":
+    x: 1280
+    y: -1097
+    width: 1080
+    height: 1897
+    path: ""
+    tabs: ""
+    selectedTab: ""
+    treeWidth: 200
+  "letter-spacing":
+    "letter-spacing": -0.5
+  "vim-mode":
+    useSmartcaseForSearch: true
+  minimap:
+    plugins:
+      selection: true
+      "color-highlight": true
+      "highlight-selected": true
+      "git-diff": true
+      "find-and-replace": true
+  "autocomplete-plus":
+    confirmCompletion: "tab and enter"
+    includeCompletionsFromAllBuffers: true
+  "linter-lsc": {}
+  linter: {}
+  whitespace: {}
+  "save-session":
+    dataSaveFolder: "/Users/matthew.brennan/.atom/packages/save-session/projects"
+    windowX: 0
+    windowY: 0
+    windowWidth: 1280
+    windowHeight: 800
+    project: "/Users/matthew.brennan/Documents/ft-app"
+    fullScreen: true
+  "linter-jshint": {}
+  "file-types":
+    $debug: true
+    ms: "text.html.mustache"

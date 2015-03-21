@@ -1,0 +1,93 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+.tree-view {
+
+}
+
+// style the background and foreground colors on the atom-text-editor-element
+// itself
+atom-text-editor {
+
+}
+
+
+// To style other content in the text editor's shadow DOM, use the ::shadow
+// expression
+atom-text-editor::shadow .cursor {
+
+}
+
+atom-text-editor.vim-mode.command-mode.is-focused,
+atom-text-editor.vim-mode.operator-pending-mode.is-focused,
+atom-text-editor.vim-mode.visual-mode.is-focused
+{
+  &::shadow, // shadow-DOM enabled
+  &           // shadow-DOM disabled
+  {
+    .cursor, .cursor.blink-off {
+      background-color: #9CF;
+      opacity: 1;
+    }
+  }
+}
+
+.markdown-preview {
+  background: #0d0d0d;
+  color: #fbfbfb;
+
+  .editor, code {
+    background: #111;
+    border-color: #222;
+    color: #ccc;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    border-color: #222;
+  }
+
+  table {
+    thead, tbody {
+      tr {
+        background-color: transparent;
+      }
+      tr:nth-child(even) {
+        background-color: #111;
+      }
+
+      th, td {
+        border-color: #222;
+      }
+    }
+  }
+}
+
+.tab-bar {
+  height: 0px;
+  visibility: hidden;
+}
+
+#status-bar-vim-mode {
+  font-size: 1.1em;
+  padding: 0 14px;
+}
+
+.status-bar-vim-mode-insert {
+  color: #FCC;
+  text-shadow: 0 0 4px #300;
+  background: rgba(255,0,0,0.5);
+}
+
+.status-bar-vim-mode-visual {
+  color: #CFF;
+  text-shadow: 0 0 4px #033;
+  background: rgba(0,255,255,0.5);
+}
